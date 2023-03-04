@@ -9,9 +9,7 @@ import UIKit
 import SCLAlertView
 
 class ViewController: UIViewController {
-    
     private let table = UITableView()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(table)
@@ -21,8 +19,6 @@ class ViewController: UIViewController {
     }
     
 }
-
-
 
 extension ViewController: UITableViewDataSource {
     
@@ -35,7 +31,6 @@ extension ViewController: UITableViewDataSource {
         cell.textLabel?.text = "DEMO"
         return cell
     }
-    
 }
 
 extension ViewController: UITableViewDelegate {
@@ -59,9 +54,6 @@ extension ViewController: UITableViewDelegate {
         } else if indexPath.row == 5 {
             SCLAlertView().showTitle("Titleeee", subTitle: "Something", style: .info)
         }
-
-
     }
-    
 }
 
